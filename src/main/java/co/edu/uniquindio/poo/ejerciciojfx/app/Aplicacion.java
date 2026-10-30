@@ -4,12 +4,11 @@ import co.edu.uniquindio.poo.ejerciciojfx.model.Categoria;
 import co.edu.uniquindio.poo.ejerciciojfx.model.Cliente;
 import co.edu.uniquindio.poo.ejerciciojfx.model.Empresa;
 import co.edu.uniquindio.poo.ejerciciojfx.model.Producto;
-import co.edu.uniquindio.poo.ejerciciojfx.viewController.GestionarClienteViewController;
-import co.edu.uniquindio.poo.ejerciciojfx.viewController.GestionarProductoViewController;
+import co.edu.uniquindio.poo.ejerciciojfx.viewController.ClienteViewController;
+import co.edu.uniquindio.poo.ejerciciojfx.viewController.ProductoViewController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import java.io.IOException;
 
@@ -31,7 +30,7 @@ public class Aplicacion extends Application {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(Aplicacion.class.getResource("/co/edu/uniquindio/poo/ejerciciojfx/agregarcliente.fxml"));
             javafx.scene.layout.AnchorPane rootLayout = (javafx.scene.layout.AnchorPane) loader.load();
-            GestionarClienteViewController gestionarClienteViewController = loader.getController();
+            ClienteViewController gestionarClienteViewController = loader.getController();
             gestionarClienteViewController.setApp(this);
 
             Scene scene = new Scene(rootLayout);
@@ -49,7 +48,7 @@ public class Aplicacion extends Application {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(Aplicacion.class.getResource("/co/edu/uniquindio/poo/ejerciciojfx/agregarproductos.fxml"));
             javafx.scene.layout.AnchorPane rootLayout = (javafx.scene.layout.AnchorPane) loader.load();
-            GestionarProductoViewController gestionarProductoViewController = loader.getController();
+            ProductoViewController gestionarProductoViewController = loader.getController();
             gestionarProductoViewController.setApp(this);
 
 

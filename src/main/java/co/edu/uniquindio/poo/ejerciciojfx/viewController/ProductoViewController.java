@@ -10,7 +10,7 @@ import javafx.scene.control.TextField;
 
 import co.edu.uniquindio.poo.ejerciciojfx.app.Aplicacion;
 
-public class GestionarProductoViewController {
+public class ProductoViewController {
 
     Aplicacion aplicacion;
 
