@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="504.0" prefWidth="268.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.ejerciciojfx.viewController.GestionarClienteViewController">
+   <children>
+      <Text fill="#e81163" layoutX="62.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gestion Clientes">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <Separator layoutY="28.0" prefHeight="42.0" prefWidth="262.0" />
+      <Text fill="#e80948" layoutX="14.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre:">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#e80948" layoutX="14.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apellido:">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#e80948" layoutX="14.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cedula:">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Separator layoutX="6.0" layoutY="233.0" prefHeight="42.0" prefWidth="262.0" />
+      <TextField fx:id="txtNombre" layoutX="79.0" layoutY="58.0" />
+      <TextField fx:id="txtApellido" layoutX="79.0" layoutY="110.0" />
+      <TextField fx:id="txtCedula" layoutX="79.0" layoutY="163.0" />
+      <Button fx:id="btnAgregarCliente" layoutX="13.0" layoutY="208.0" mnemonicParsing="false" onAction="#agregarClienteEvent" text="Agregar Cliente" textFill="#dd1c4c" />
+      <Button fx:id="btnActualizarCliente" layoutX="137.0" layoutY="208.0" mnemonicParsing="false" onAction="#actualizarClienteEvent" text="Actualizar Cliente" textFill="#e10b53" />
+      <TableView layoutX="13.0" layoutY="263.0" prefHeight="200.0" prefWidth="242.0" tableMenuButtonVisible="true">
+        <columns>
+          <TableColumn prefWidth="69.0" text="Nombre" />
+          <TableColumn prefWidth="66.0" text="Apellido" />
+            <TableColumn prefWidth="66.0" text="Cedula" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnLimpiar" layoutX="39.0" layoutY="471.0" mnemonicParsing="false" onAction="#limpiarTablaEvent" text="Limpiar" textFill="#dd1c4c" />
+      <Button fx:id="btnEliminarCliente" layoutX="154.0" layoutY="471.0" mnemonicParsing="false" onAction="#eliminarClienteEvent" text="Eliminar" textFill="#dd1c4c" />
+   </children>
+</AnchorPane>
