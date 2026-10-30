@@ -47,7 +47,7 @@ public class Aplicacion extends Application {
 
         try {
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(Aplicacion.class.getResource("/co/edu/uniquindio/poo/empresa/agregarproductos.fxml"));
+            loader.setLocation(Aplicacion.class.getResource("/co/edu/uniquindio/poo/ejerciciojfx/agregarproductos.fxml"));
             javafx.scene.layout.AnchorPane rootLayout = (javafx.scene.layout.AnchorPane) loader.load();
             GestionarProductoViewController gestionarProductoViewController = loader.getController();
             gestionarProductoViewController.setApp(this);

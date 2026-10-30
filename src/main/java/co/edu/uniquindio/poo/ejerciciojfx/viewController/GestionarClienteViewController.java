@@ -101,7 +101,7 @@ public class GestionarClienteViewController {
         alerta.setTitle(titulo);
         alerta.setHeaderText(null);
         alerta.setContentText(mensaje);
-        alerta.showAndWait();
+        alerta.show();
     }
 
     @FXML

@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.*?>
 
 
-<AnchorPane prefHeight="504.0" prefWidth="268.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.ejerciciojfx.viewController.GestionarClienteViewController">
+<AnchorPane prefHeight="504.0" prefWidth="268.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.ejerciciojfx.viewController.ClienteViewController">
    <children>
       <Text fill="#e81163" layoutX="62.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gestion Clientes">
          <font>
